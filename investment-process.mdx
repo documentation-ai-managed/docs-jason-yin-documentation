@@ -1,0 +1,101 @@
+---
+title: Investment Process
+description: Detailed guide to our investment evaluation and funding process for Web3 startups
+---
+
+## Overview
+
+Our investment process is designed to identify and nurture promising Web3 projects led by student entrepreneurs. We focus on thorough evaluation, mentorship, and strategic funding to ensure long-term success.
+
+<Steps>
+  <Step title="Initial Screening" icon="search">
+    Projects are reviewed for Web3 relevance, technical feasibility, and team strength.
+    ```javascript
+    const screenProject = (project) => {
+      return project.category === 'web3' && project.teamSize >= 3;
+    };
+    ```
+  </Step>
+  <Step title="Due Diligence" icon="check-circle">
+    In-depth analysis of business model, market opportunity, and regulatory compliance.
+  </Step>
+  <Step title="Mentorship Phase" icon="users">
+    Access to our network of Web3 experts and industry mentors.
+  </Step>
+  <Step title="Funding Decision" icon="dollar-sign">
+    Final investment committee review and funding allocation.
+  </Step>
+</Steps>
+
+<Tabs>
+  <Tab title="Early Stage" icon="seedling">
+    <Callout kind="info">Ideal for pre-seed projects with MVP ready.</Callout>
+    Funding range: $50K - $250K
+  </Tab>
+  <Tab title="Growth Stage" icon="trending-up">
+    <Expandable title="Requirements" default-open="false">
+      Established user base, revenue model, and scalability plan.
+    </Expandable>
+    Funding range: $500K - $2M
+  </Tab>
+</Tabs>
+
+## Evaluation Criteria
+
+| Criterion | Weight | Description |
+|-----------|--------|-------------|
+| Innovation | 30% | Uniqueness of Web3 solution |
+| Team | 25% | Experience and commitment |
+| Market | 25% | Size and accessibility |
+| Traction | 20% | User growth and validation |
+
+<CodeGroup tabs="TypeScript,Go">
+  ```typescript
+  interface ProjectEvaluation {
+    innovation: number;
+    team: number;
+    market: number;
+    traction: number;
+  }
+  
+  const evaluateProject = (project: ProjectEvaluation): number => {
+    return (project.innovation * 0.3) + (project.team * 0.25) + 
+           (project.market * 0.25) + (project.traction * 0.2);
+  };
+  ```
+  ```go
+  type ProjectEvaluation struct {
+      Innovation float64
+      Team       float64
+      Market     float64
+      Traction   float64
+  }
+  
+  func evaluateProject(p ProjectEvaluation) float64 {
+      return (p.Innovation * 0.3) + (p.Team * 0.25) + 
+             (p.Market * 0.25) + (p.Traction * 0.2)
+  }
+  ```
+</CodeGroup>
+
+<Callout kind="success">Over 300 projects have successfully gone through our process, with an average funding of $150K.</Callout>
+
+<ExpandableGroup>
+  <Expandable title="What happens after funding?" default-open="false">
+    Post-funding, we provide ongoing support through strategic guidance, network introductions, and follow-on funding opportunities.
+  </Expandable>
+  <Expandable title="How long does the process take?" default-open="false">
+    From initial application to funding decision, the process typically takes 4-8 weeks, depending on project complexity.
+  </Expandable>
+</ExpandableGroup>
+
+## Success Stories
+
+<Columns cols={2}>
+  <Card title="DeFi Protocol" icon="zap" href="#">
+    Raised $1.2M, now serving 50K+ users.
+  </Card>
+  <Card title="NFT Marketplace" icon="image" href="#">
+    Secured $800K, launched with 10K transactions.
+  </Card>
+</Columns>

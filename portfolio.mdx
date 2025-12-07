@@ -1,0 +1,94 @@
+---
+title: Portfolio
+description: Explore our diverse portfolio of Web3 projects and investment successes
+---
+
+## Portfolio Overview
+
+Our portfolio showcases successful Web3 ventures that have benefited from our investment and mentorship. These projects span various sectors within the decentralized ecosystem.
+
+<Columns cols={3}>
+  <Card title="DeFi Lending" icon="dollar-sign" href="#">
+    Revolutionary lending protocol with $100M+ TVL.
+  </Card>
+  <Card title="NFT Platform" icon="image" href="#">
+    Marketplace connecting creators and collectors.
+  </Card>
+  <Card title="DAO Governance" icon="users" href="#">
+    Tools for decentralized decision-making.
+  </Card>
+</Columns>
+
+<Tabs>
+  <Tab title="DeFi" icon="trending-up">
+    <Callout kind="info">Our DeFi investments have generated 5x returns on average.</Callout>
+    - Decentralized exchanges
+    - Yield farming protocols
+    - Stablecoin solutions
+  </Tab>
+  <Tab title="NFTs" icon="image">
+    <Expandable title="Market Trends" default-open="false">
+      NFT market has grown 300% in the past year, with gaming and art leading adoption.
+    </Expandable>
+    - Gaming assets
+    - Digital art platforms
+    - Collectible marketplaces
+  </Tab>
+  <Tab title="Infrastructure" icon="server">
+    <Steps>
+      <Step title="Layer 1" icon="layers">Blockchain protocols</Step>
+      <Step title="Layer 2" icon="network">Scaling solutions</Step>
+      <Step title="Tools" icon="tool">Developer tools</Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Investment Performance
+
+| Sector | Projects | Avg Funding | Avg ROI |
+|--------|----------|-------------|---------|
+| DeFi | 15 | $200K | 4.2x |
+| NFTs | 12 | $150K | 3.8x |
+| Infra | 8 | $300K | 5.1x |
+
+<CodeGroup tabs="Python,JavaScript">
+  ```python
+  def calculate_roi(initial_investment, current_value):
+      return (current_value - initial_investment) / initial_investment
+  
+  # Example: 4.2x return
+  roi = calculate_roi(200000, 840000)
+  print(f"ROI: {roi:.1f}x")
+  ```
+  ```javascript
+  const calculateROI = (initial, current) => {
+    return (current - initial) / initial;
+  };
+  
+  // Example: 4.2x return
+  const roi = calculateROI(200000, 840000);
+  console.log(`ROI: ${roi.toFixed(1)}x`);
+  ```
+</CodeGroup>
+
+<Callout kind="success">Our portfolio companies have collectively raised over $50M in follow-on funding.</Callout>
+
+<ExpandableGroup>
+  <Expandable title="Exit Strategy" default-open="false">
+    We support various exit paths including IPOs, acquisitions, and secondary market sales, tailored to each project's goals.
+  </Expandable>
+  <Expandable title="Due Diligence Process" default-open="false">
+    Every portfolio company undergoes rigorous technical, financial, and legal due diligence before investment.
+  </Expandable>
+</ExpandableGroup>
+
+## Recent Additions
+
+<Columns cols={2}>
+  <Card title="Web3 Social" icon="message-square" href="#">
+    Decentralized social network with privacy-first design.
+  </Card>
+  <Card title="Green Blockchain" icon="leaf" href="#">
+    Eco-friendly consensus mechanism reducing energy consumption.
+  </Card>
+</Columns>

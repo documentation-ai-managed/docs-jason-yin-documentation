@@ -1,0 +1,84 @@
+---
+title: Introduction
+description: Overview of Jason Yin Documentation and its core capabilities
+---
+
+## Getting Started
+
+Jason Yin Documentation serves as a comprehensive platform for student entrepreneurs in the Web3 space, providing essential resources and connections to foster innovation. As a venture capital firm, we bridge the gap between talented young minds and investment opportunities, supporting over 17,000 learners and 300+ community members. Our focus on Web3 entrepreneurship makes us uniquely positioned to accelerate projects that shape the future of decentralized technologies.
+
+<Columns cols={3}>
+  <Card title="Investment Process" icon="trending-up" href="investment-process">
+    Discover how we evaluate and support Web3 startups from initial pitch to funding.
+  </Card>
+  <Card title="Portfolio" icon="folder" href="portfolio">
+    Explore our diverse range of Web3 projects and success stories.
+  </Card>
+  <Card title="Community" icon="users" href="community">
+    Connect with fellow entrepreneurs and join our thriving ecosystem.
+  </Card>
+</Columns>
+
+## Core Features
+
+<Tabs>
+  <Tab title="For Entrepreneurs" icon="user">
+    <Steps>
+      <Step title="Register" icon="user-plus">
+        Create your profile and showcase your Web3 project.
+      </Step>
+      <Step title="Pitch" icon="presentation">
+        Submit your business plan and technical details.
+      </Step>
+      <Step title="Connect" icon="users">
+        Engage with investors and mentors in our community.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="For Investors" icon="dollar-sign">
+    <Callout kind="info">We provide exclusive access to promising Web3 ventures.</Callout>
+    <Expandable title="Investment Criteria" default-open="false">
+      Projects must demonstrate innovative Web3 technology, strong team capabilities, and market potential. We prioritize sustainable business models and ethical practices.
+    </Expandable>
+  </Tab>
+</Tabs>
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  // Example API call to submit a project
+  const submitProject = async (projectData) => {
+    const response = await fetch('/api/projects', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(projectData)
+    });
+    return response.json();
+  };
+  ```
+  ```python
+  import requests
+  
+  def submit_project(project_data):
+      response = requests.post('/api/projects', json=project_data)
+      return response.json()
+  ```
+</CodeGroup>
+
+<Callout kind="tip">Join our community today to start your Web3 journey with expert guidance.</Callout>
+
+## Why Choose Us
+
+| Aspect | Jason Yin | Other VCs |
+|--------|-----------|-----------|
+| Focus | Student Entrepreneurs | General Startups |
+| Network | 17,000+ Learners | Limited |
+| Expertise | Web3 Specialized | Broad |
+
+<ExpandableGroup>
+  <Expandable title="What makes Web3 unique?" default-open="false">
+    Web3 represents the next evolution of the internet, emphasizing decentralization, blockchain technology, and user ownership of data.
+  </Expandable>
+  <Expandable title="How do I get started?" default-open="false">
+    Begin by joining our community, learning about Web3 fundamentals, and developing your project idea.
+  </Expandable>
+</ExpandableGroup>
